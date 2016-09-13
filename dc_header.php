@@ -131,7 +131,7 @@ if ($selectedSupplierId > 0) {
 			<li <?php if (curPage() == "dc_product_admin.php" OR curPage() == "dc_product_manage.php") {echo 'class="active" ';}?>><a href="/beheer/dc_product_admin.php"> <span class="glyphicon glyphicon-barcode"></span> Producten</a> <div class="arrow"><div class="bubble-arrow-border"></div><div class="bubble-arrow"></div></div></li>
 			<li <?php if (curPage() == "dc_setting_supplier_admin.php") {echo 'class="active" ';}?>><a href="/beheer/dc_setting_supplier_admin.php"> <span class="glyphicon glyphicon-wrench"></span> Instellingen</a> <div class="arrow"><div class="bubble-arrow-border"></div><div class="bubble-arrow"></div></div></li>
 			<li <?php if (curPage() == "dc_paymethod_admin.php" /*OR curPage() == "dc_paymethod_manage.php"*/) {echo 'class="active" ';}?>><a href="/beheer/dc_paymethod_admin.php"> <span class="glyphicon glyphicon-credit-card"></span> Betaalmethoden</a> <div class="arrow"><div class="bubble-arrow-border"></div><div class="bubble-arrow"></div></div></li>
-<?php
+			<?php
 }
 ?>
 
