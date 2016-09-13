@@ -30,15 +30,10 @@ if (!empty($_GET['succes'])) {
 }
 
 ?>
-<table class="table table-striped table-json" id="table" data-json-file="dc_customer_list.json">
+<table class="table table-striped table-json" id="table" data-json-file="dc_store_list.json">
     <thead>
     <tr>
-        <th width="10%" data-json-column="customer_id" data-json-sort="desc">Klantnummer</th>
-        <th width="10%" data-json-column="date_added">Datum</th>
-        <th data-json-column="first_name">Naam</th>
-        <th data-json-column="email">Email</th>
-        <th width="5%">#</th>
-        <th width="5%">Details</th>
+        <th width="10%">Klantnummer</th>
     </tr>
     </thead>
     <tbody></tbody>
