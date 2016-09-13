@@ -28,16 +28,16 @@ require 'includes/php/dc_header.php';
     <li data-json-value="all"><a>Alles</a></li>
 </ul>
 
-<table class="table table-striped table-json" id="table" data-json-file="dc_order_supplier_list.json">
+<table class="table table-striped table-json" id="table" data-json-file="dc_order_list.json">
     <thead>
     <tr>
-        <th width="10%">Klant</th>
-        <th width="10%">Productnaam</th>
+        <th width="10%" data-json-column="order_id" data-json-sort="desc">Winkel</th>
+        <th width="10%" data-json-column=>Productnaam</th>
         <th>Hoeveelheid verkochte artikelen</th>
-        <th>Totaal</th>
         <th width="5%">Details</th>
     </tr>
 	</thead>
+	<tbody></tbody>
 </table>
 <ul class="pagination pagination-json" data-json-table="#table" data-json-items="25"></ul>
 <script src="/beheer/includes/script/jquery.dynamic-table.js"></script>
