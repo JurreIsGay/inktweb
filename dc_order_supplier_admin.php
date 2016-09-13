@@ -28,7 +28,7 @@ require 'includes/php/dc_header.php';
     <li data-json-value="all"><a>Alles</a></li>
 </ul>
 
-<table class="table table-striped table-json" id="table" data-json-file="dc_order_list.json">
+<table class="table table-striped table-json" id="table" data-json-file="dc_order_supplier_list.json">
     <thead>
     <tr>
         <th width="10%">Klant</th>

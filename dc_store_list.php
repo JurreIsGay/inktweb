@@ -20,7 +20,10 @@ $intOffset = (isset($_GET['offset'])) ? (int) $_GET["offset"] : 0;
 $intLimit = (isset($_GET['limit'])) ? (int) $_GET["limit"] : 15;
 
 $strSort = ($strSortColumn != '') ? " ORDER BY `" . $strSortColumn . "` " . $strSortOrder : '';
-$strWhere .= ($strQuery != '') ? " AND (c.company LIKE '%" . $strQuery . "%' OR c.firstname LIKE '%" . $strQuery . "%' OR c.lastname LIKE '%" . $strQuery . "%' OR c.email LIKE '%" . $strQuery . "%')" : '';
+$strWhere .= ($strQuery != '') ? " AND (supplier_id LIKE '%" . $strQuery . "%' )" : '';
 $strLimit = " LIMIT " . $intOffset . "," . $intLimit;
 
+$supplierId = $_SESSION['sessionSupplerId'];
+
+$strSQL = "SELECT * FROM `supplier` WHERE supplier_id = '" . $supplierId . "'"
 ?>

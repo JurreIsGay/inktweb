@@ -33,7 +33,7 @@ if (!empty($_GET['succes'])) {
 <table class="table table-striped table-json" id="table" data-json-file="dc_store_list.json">
     <thead>
     <tr>
-        <th width="10%">Klantnummer</th>
+        <th width="10%" data-json-column="supplier_id" data-json-sort="desc">supplier</th>
     </tr>
     </thead>
     <tbody></tbody>
